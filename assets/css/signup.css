@@ -1,0 +1,130 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #232526, #414345);
+    background: linear-gradient(to right, #232526, #414345);
+}
+
+.return {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.return a {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #333;
+    transition: 0.2s;
+}
+.return a:hover {
+    color: rgb(255, 174, 0);
+    cursor: pointer;
+}
+
+.container {
+    width: 380px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #fff;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+form input::placeholder {
+    color: #eee;
+}
+
+#register-btn{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#btn-register:hover{
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.social-btn:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.login-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.login-text a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-text a:hover {
+    color: rgb(255, 174, 0);
+}

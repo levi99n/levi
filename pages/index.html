@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Znews — Tin tức nhanh, chính xác</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════ -->
+  <header class="header">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="../pages/index.html">
+          <div class="logo-badge">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16v3L8 17h12v3H4v-3l12-10H4z"/></svg>
+          </div>
+          <span class="logo-wordmark">Znews</span>
+        </a>
+      </div>
+
+      <!-- Nav -->
+      <nav class="header-menu">
+        <ul>
+          <li><a href="../pages/direct.html?category=Kinh doanh">Kinh doanh</a></li>
+          <li><a href="../pages/direct.html?category=Thể thao">Thể thao</a></li>
+          <li><a href="../pages/direct.html?category=Công nghệ">Công nghệ</a></li>
+          <li><a href="../pages/direct.html?category=Sức khỏe">Sức khỏe</a></li>
+          <li><a href="../pages/direct.html?category=Đời sống">Đời sống</a></li>
+          <li><a href="../pages/direct.html?category=Giải trí">Giải trí</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search -->
+      <div class="header-search">
+        <input type="text" id="search-input" class="input" placeholder="Tìm kiếm tin tức...">
+        <button class="btn" id="search-btn"><i class="fa fa-search"></i></button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Floating nav -->
+  <div class="content-left">
+    <a href="../pages/index.html"><p id="home"><i class="fa fa-home"></i></p></a>
+    <a href="../pages/login.html"><p id="user"><i class="fa fa-user"></i></p></a>
+    <a href="#"><p id="go-up"><i class="fa fa-arrow-up"></i></p></a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO: 3 cột — trái / giữa / phải
+  ═══════════════════════════════════════ -->
+  <section class="container">
+    <div id="body-left"></div>
+    <div class="body-center">
+      <div id="body-center"></div>
+    </div>
+    <div id="body-right"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       TIN NỔI BẬT
+  ═══════════════════════════════════════ -->
+  <section class="container2">
+    <div class="highlight-news">
+      <div class="highlight-news-header">
+        <div class="section-label">Tin nổi bật</div>
+        <span class="section-title">Không thể bỏ lỡ</span>
+      </div>
+      <div class="highlight" id="container2"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       TIN HOT
+  ═══════════════════════════════════════ -->
+  <section class="container3">
+    <div class="con3-header">
+      <div class="con3-header-left">
+        <div class="hot-badge">
+          🔥 Tin Hot
+        </div>
+      </div>
+      <ul class="con3-tabs">
+        <li><a href="../pages/p1.html">Video</a></li>
+        <li><a href="../pages/p1.html">Podcast</a></li>
+        <li><a href="../pages/p1.html">Story</a></li>
+        <li><a href="../pages/p1.html">Quiz</a></li>
+      </ul>
+    </div>
+
+    <div class="con3-content" id="container3">
+      <div class="con3-content-left" id="con3-content-left"></div>
+      <div class="con3-content-right">
+        <div class="right-side" id="right-side"></div>
+        <div class="left-side"  id="left-side"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       DANH SÁCH + QUẢNG CÁO
+  ═══════════════════════════════════════ -->
+  <section class="container4">
+    <div class="con4-content-left">
+      <div class="con4-list-header">
+        <div class="section-label">Tất cả bài viết</div>
+      </div>
+      <div id="product-list"></div>
+    </div>
+
+    <aside class="con4-content-right">
+      <a href="#"><img src="../assets/image/qc1.png" alt="Quảng cáo"></a>
+      <a href="#"><img src="../assets/image/qc2.png" alt="Quảng cáo"></a>
+      <a href="#"><img src="../assets/image/qc5.png" alt="Quảng cáo"></a>
+      <a href="#"><img src="../assets/image/qc6.png" alt="Quảng cáo"></a>
+    </aside>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-top-inner">
+        <ul>
+          <li><a href="#">Star</a></li>
+          <li><a href="#">Cine</a></li>
+          <li><a href="#">Musik</a></li>
+          <li><a href="#">Beauty &amp; Fashion</a></li>
+          <li><a href="#">Sport</a></li>
+          <li><a href="#">Đời sống</a></li>
+          <li><a href="#">Xã hội</a></li>
+          <li><a href="#">Ăn - Quẩy - Đi</a></li>
+          <li><a href="#">Xem mua luôn</a></li>
+          <li><a href="#">Thế giới đó đây</a></li>
+          <li><a href="#">Sức khỏe</a></li>
+          <li><a href="#">Tek-Life</a></li>
+          <li><a href="#">Học đường</a></li>
+          <li><a href="#">Money-Z</a></li>
+          <li><a href="#">Video</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <div class="footer-bottom-left-item">
+          <h3>Trụ sở Hà Nội</h3>
+          <div class="mini-item">
+            <p>Tầng 21, Tòa nhà Center Building, Hapulico Complex,<br>
+               Số 01 phố Nguyễn Huy Tường, phường Thanh Xuân, Hà Nội</p>
+            <p>Điện thoại: 024 7309 5555, máy lẻ 62.370</p>
+          </div>
+        </div>
+        <div class="footer-bottom-left-item">
+          <h3>Trụ sở TP.HCM</h3>
+          <div class="mini-item">
+            <p>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần,<br>
+               phường Xuân Hòa, TP.HCM</p>
+            <p>Điện thoại: 028 7307 7979</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-right">
+        <div class="footer-bottom-right-item">
+          <h3>Quản lý nội dung</h3>
+          <p id="bnbm">Bà Nguyễn Bích Minh</p>
+        </div>
+        <div class="footer-bottom-right-item">
+          <h3>Hợp tác truyền thông</h3>
+          <div class="mini-item2">
+            <p>024.73095555 (máy lẻ 62.370)</p>
+            <p>marketing@kenh14.vn</p>
+          </div>
+        </div>
+        <div class="footer-bottom-right-item">
+          <h3>Liên hệ quảng cáo</h3>
+          <div class="mini-item2">
+            <p>02473007108</p>
+            <p>giaitrixahoi@admicro.vn</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="footer-logo-sm">
+        <div class="dot"></div>
+        Znews
+      </div>
+      <span>© 2025 Znews. Bản quyền thuộc về Znews.</span>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       SCRIPTS — logic giữ nguyên 100%
+  ═══════════════════════════════════════ -->
+  <script type="module" src="../assets/java/databaseconfig.js"></script>
+  <script type="module">
+    import { renderData } from "../assets/java/products.js";
+    import { initTTS } from "../assets/java/tts.js";
+    renderData().then(() => initTTS());
+  </script>
+  <script type="module" src="../assets/java/search.js"></script>
+  <script type="module">
+    import { initAuthUI } from "../assets/java/auth_state.js";
+    initAuthUI();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Znews — Tìm kiếm</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/subpage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- HEADER — giống y trang chủ -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <a href="../pages/index.html">
+          <div class="logo-badge">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16v3L8 17h12v3H4v-3l12-10H4z"/></svg>
+          </div>
+          <span class="logo-wordmark">Znews</span>
+        </a>
+      </div>
+      <nav class="header-menu">
+        <ul>
+          <li><a href="../pages/direct.html?category=Kinh doanh">Kinh doanh</a></li>
+          <li><a href="../pages/direct.html?category=Thể thao">Thể thao</a></li>
+          <li><a href="../pages/direct.html?category=Công nghệ">Công nghệ</a></li>
+          <li><a href="../pages/direct.html?category=Sức khỏe">Sức khỏe</a></li>
+          <li><a href="../pages/direct.html?category=Đời sống">Đời sống</a></li>
+          <li><a href="../pages/direct.html?category=Giải trí">Giải trí</a></li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <input type="text" id="search-input" class="input" placeholder="Tìm kiếm tin tức...">
+        <button class="btn" id="search-btn"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Floating nav -->
+  <div class="content-left">
+    <a href="../pages/index.html"><p id="home"><i class="fa fa-home"></i></p></a>
+    <a href="../pages/login.html"><p id="user"><i class="fa fa-user"></i></p></a>
+    <a href="#"><p id="go-up"><i class="fa fa-arrow-up"></i></p></a>
+  </div>
+
+  <!-- SUBPAGE HERO -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-inner">
+      <span class="subpage-eyebrow">Tìm kiếm</span>
+      <h1 class="subpage-title" id="search-heading">Đang tìm kiếm…</h1>
+    </div>
+  </section>
+
+  <!-- NỘI DUNG -->
+  <section class="container4">
+    <div class="con4-content-left">
+      <div class="con4-list-header">
+        <div class="section-label">Bài viết tìm thấy</div>
+      </div>
+      <div id="con4-list"></div>
+    </div>
+    <aside class="con4-content-right">
+      <a href="#"><img src="../assets/image/qc1.png" alt="Quảng cáo"></a>
+      <a href="#"><img src="../assets/image/qc2.png" alt="Quảng cáo"></a>
+      <a href="#"><img src="../assets/image/qc5.png" alt="Quảng cáo"></a>
+      <a href="#"><img src="../assets/image/qc6.png" alt="Quảng cáo"></a>
+    </aside>
+  </section>
+
+  <!-- FOOTER — giống y trang chủ -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-top-inner">
+        <ul>
+          <li><a href="#">Star</a></li><li><a href="#">Cine</a></li>
+          <li><a href="#">Musik</a></li><li><a href="#">Beauty &amp; Fashion</a></li>
+          <li><a href="#">Sport</a></li><li><a href="#">Đời sống</a></li>
+          <li><a href="#">Xã hội</a></li><li><a href="#">Ăn - Quẩy - Đi</a></li>
+          <li><a href="#">Xem mua luôn</a></li><li><a href="#">Thế giới đó đây</a></li>
+          <li><a href="#">Sức khỏe</a></li><li><a href="#">Tek-Life</a></li>
+          <li><a href="#">Học đường</a></li><li><a href="#">Money-Z</a></li>
+          <li><a href="#">Video</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <div class="footer-bottom-left-item">
+          <h3>Trụ sở Hà Nội</h3>
+          <div class="mini-item">
+            <p>Tầng 21, Tòa nhà Center Building, Hapulico Complex,<br>Số 01 phố Nguyễn Huy Tường, phường Thanh Xuân, Hà Nội</p>
+            <p>Điện thoại: 024 7309 5555, máy lẻ 62.370</p>
+          </div>
+        </div>
+        <div class="footer-bottom-left-item">
+          <h3>Trụ sở TP.HCM</h3>
+          <div class="mini-item">
+            <p>Tầng 4, Tòa nhà 123, số 127 Võ Văn Tần,<br>phường Xuân Hòa, TP.HCM</p>
+            <p>Điện thoại: 028 7307 7979</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-right">
+        <div class="footer-bottom-right-item">
+          <h3>Quản lý nội dung</h3>
+          <p id="bnbm">Bà Nguyễn Bích Minh</p>
+        </div>
+        <div class="footer-bottom-right-item">
+          <h3>Hợp tác truyền thông</h3>
+          <div class="mini-item2">
+            <p>024.73095555 (máy lẻ 62.370)</p>
+            <p>marketing@kenh14.vn</p>
+          </div>
+        </div>
+        <div class="footer-bottom-right-item">
+          <h3>Liên hệ quảng cáo</h3>
+          <div class="mini-item2">
+            <p>02473007108</p>
+            <p>giaitrixahoi@admicro.vn</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="footer-logo-sm"><div class="dot"></div>Znews</div>
+      <span>© 2025 Znews. Bản quyền thuộc về Znews.</span>
+    </div>
+  </footer>
+
+  <script type="module" src="../assets/java/databaseconfig.js"></script>
+  <script type="module" src="../assets/java/search.js"></script>
+  <script type="module">
+    import { initAuthUI } from "../assets/java/auth_state.js";
+    initAuthUI();
+    const keyword = new URLSearchParams(window.location.search).get("keyword");
+    const heading = document.getElementById("search-heading");
+    if (keyword && heading) heading.textContent = `Kết quả cho: "${keyword}"`;
+    else if (heading) heading.textContent = "Nhập từ khóa để tìm kiếm";
+  </script>
+
+</body>
+</html>

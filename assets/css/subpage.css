@@ -1,0 +1,124 @@
+/**
+ * subpage.css
+ * Bổ sung cho search.html và direct.html sử dụng cùng style.css trang chủ.
+ * Chỉ chứa phần KHÁC BIỆT: subpage hero banner + override nhỏ cho article cards.
+ */
+
+/* ── Subpage Hero Banner ────────────────────────────────────────── */
+.subpage-hero {
+  background: var(--text-primary);
+  margin-bottom: 0;
+  padding: 40px 24px 36px;
+}
+
+.subpage-hero-inner {
+  max-width: var(--w-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.subpage-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.subpage-eyebrow::before {
+  content: "";
+  width: 3px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.subpage-title {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  line-height: 1.2;
+  max-width: 800px;
+}
+
+/* ── container4 top margin for subpages ───────────────────────── */
+.subpage-hero + .container4 {
+  margin-top: 36px;
+}
+
+/* ── Article card — image size đồng nhất với trang chủ ─────────── */
+.con4-left-item img {
+  width: 180px !important;
+  height: 120px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+/* ── Empty state ────────────────────────────────────────────────── */
+#con4-list > p,
+#product-list > p {
+  padding: 48px 0;
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* ── Loading skeleton ────────────────────────────────────────────  */
+.skeleton-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+.skeleton-img {
+  width: 180px;
+  height: 120px;
+  border-radius: var(--radius-sm);
+  background: #e8e6e0;
+  flex-shrink: 0;
+}
+
+.skeleton-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skeleton-line {
+  height: 14px;
+  border-radius: 4px;
+  background: #e8e6e0;
+}
+
+.skeleton-line.wide  { width: 80%; }
+.skeleton-line.med   { width: 55%; }
+.skeleton-line.short { width: 35%; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.45; }
+}
+
+/* ── Responsive ─────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .subpage-hero {
+    padding: 28px 16px 24px;
+  }
+  .con4-left-item img {
+    width: 120px !important;
+    height: 80px;
+  }
+}
